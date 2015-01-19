@@ -1,0 +1,4 @@
+rootProject.name = 'sinoir-rest-service'
+
+include ':sinoir-proto'
+project(':sinoir-proto').projectDir = new File(settingsDir, '../sinoir-proto')

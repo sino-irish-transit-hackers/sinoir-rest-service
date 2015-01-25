@@ -10,8 +10,6 @@ import java.util.Date;
 @CsvDataType
 @Entity
 public class Calendar {
-    public static interface Repository extends CrudRepository<Calendar, String> {}
-
     @CsvField(pos = 1, required = true)
     @Id
     private String serviceId;

@@ -17,12 +17,12 @@ public class StopTime {
     @CsvField(pos = 1, required = true)
     @Column(name = "trip_id")
     private String tripId;
-    @CsvField(pos = 2, format = "HH:mm:ss", required = true)
+    @CsvField(pos = 2, required = true)
     @Column(name = "arrival_time")
-    private Date arrivalTime;
-    @CsvField(pos = 3, format = "HH:mm:ss", required = true)
+    private String arrivalTime;
+    @CsvField(pos = 3, required = true)
     @Column(name = "departure_time")
-    private Date departureTime;
+    private String departureTime;
     @CsvField(pos = 4, required = true)
     @Column(name = "stop_id")
     private String stopId;
@@ -58,19 +58,19 @@ public class StopTime {
         this.tripId = tripId;
     }
 
-    public Date getArrivalTime() {
+    public String getArrivalTime() {
         return arrivalTime;
     }
 
-    public void setArrivalTime(Date arrivalTime) {
+    public void setArrivalTime(String arrivalTime) {
         this.arrivalTime = arrivalTime;
     }
 
-    public Date getDepartureTime() {
+    public String getDepartureTime() {
         return departureTime;
     }
 
-    public void setDepartureTime(Date departureTime) {
+    public void setDepartureTime(String departureTime) {
         this.departureTime = departureTime;
     }
 

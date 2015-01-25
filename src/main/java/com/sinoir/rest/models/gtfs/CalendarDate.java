@@ -11,8 +11,6 @@ import java.util.Date;
 @Entity
 @Table(uniqueConstraints = @UniqueConstraint(columnNames = {"service_id", "date", "exception_type"}))
 public class CalendarDate {
-    public static interface Repository extends CrudRepository<CalendarDate, Integer> {}
-
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
